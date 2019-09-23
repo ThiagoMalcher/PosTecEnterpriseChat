@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "437945111798",
+    "firebase_url": "https://postecenterprisechat.firebaseio.com",
+    "project_id": "postecenterprisechat",
+    "storage_bucket": "postecenterprisechat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437945111798:android:fa9ed0b82d492dde6a08d7",
+        "android_client_info": {
+          "package_name": "com.example.postecenterprisechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "437945111798-ponbksjceahbtg44g5i3ll6gb7unalhv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.postecenterprisechat",
+            "certificate_hash": "7cf4b6c2a1d5124566ee1c4c7d2312d66ded7672"
+          }
+        },
+        {
+          "client_id": "437945111798-k0sfskbcd1f24d64kk117tgkv8s6qsm7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDer09YglURSXzCkuaw1PDyEOFjhKX9BHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "437945111798-k0sfskbcd1f24d64kk117tgkv8s6qsm7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
