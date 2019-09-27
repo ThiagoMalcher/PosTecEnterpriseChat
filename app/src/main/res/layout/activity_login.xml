@@ -28,7 +28,7 @@
                 android:layout_marginTop="24.3dp"
                 android:src="@drawable/likechat" />
             <EditText
-                android:id="@+id/txtEmail"
+                android:id="@+id/txtLogEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
@@ -47,15 +47,15 @@
 
 
             <EditText
-                android:id="@+id/txtSenha"
+                android:id="@+id/txtLogPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="38.8dp"
                 android:background="#00000000"
                 android:fontFamily="@font/open_sans_regular"
                 android:hint="Senha"
-                android:inputType="numberPassword"
-                android:maxLength="6"
+                android:inputType="textPassword"
+                android:maxLength="10"
                 android:textColor="@color/black"
                 android:textColorHint="@color/black" />
 
@@ -84,6 +84,7 @@
                 android:fontFamily="@font/open_sans_bold"
                 android:gravity="center"
                 android:letterSpacing="0.5"
+                android:onClick="validateUser"
                 android:padding="17dp"
                 android:text="LOGIN"
                 android:textColor="@color/black"

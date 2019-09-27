@@ -22,7 +22,7 @@ import android.widget.Toast;
 
 public class RegisterUser extends AppCompatActivity {
 
-    private EditText txtRegisterName, txtRegisterEmail, txtPassword, txtConfirmPassword;
+    private EditText txtRegisterName, txtRegisterEmail, txtPassword;
     private FirebaseAuth authentication;
 
     @Override
