@@ -61,7 +61,7 @@ public class ChatActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.menuConfigurations:
+            case R.id.menuExit:
                 turnOffUser();
                 finish();
                 break;
