@@ -85,16 +85,6 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    //get user actual and send user for Chat Activity
-    @Override
-    protected void onStart() {
-        super.onStart();
-        FirebaseUser actualUser = authentication.getCurrentUser();
-        if (actualUser != null) {
-            openMainActivity();
-        }
-    }
-
     public void openMainActivity() {
         Intent intentOpen = new Intent(LoginActivity.this, ChatActivity.class);
         startActivity(intentOpen);

@@ -15,6 +15,7 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -68,6 +69,7 @@ public class RegisterUser extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),
                             "Sucesso ao cadastrar usuário!", Toast.LENGTH_SHORT).show();
                     finish();
+                    openMainActivity();
                 } else {
                     String logException = "";
                     try {
@@ -75,7 +77,7 @@ public class RegisterUser extends AppCompatActivity {
                     } catch (FirebaseAuthWeakPasswordException e) {
                         logException = "Digite uma senha mais forte!";
                     } catch (FirebaseAuthInvalidCredentialsException e) {
-                        logException = "Por favor, digite mum e-mail válido!";
+                        logException = "Por favor, digite um e-mail válido!";
                     } catch (FirebaseAuthUserCollisionException e) {
                         logException = "Esta conta já foi cadastrada";
                     } catch (Exception e) {
@@ -87,5 +89,10 @@ public class RegisterUser extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public void openMainActivity() {
+        Intent intentOpen = new Intent(RegisterUser.this, ChatActivity.class);
+        startActivity(intentOpen);
     }
 }

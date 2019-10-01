@@ -7,7 +7,7 @@
         <item name="colorPrimaryDark">@color/LightBlue</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <style name="Toolbar" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge"></style>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
